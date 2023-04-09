@@ -1,0 +1,27 @@
+.svg-sprite--Show {
+    background: url("svg/sprite.css-cdc0f9c4.svg") 0 0 no-repeat;
+}
+
+.svg-sprite--Show-dims {
+    width: 36px;
+    height: 36px;
+}
+
+.svg-sprite--user {
+    background: url("svg/sprite.css-cdc0f9c4.svg") 100% 0 no-repeat;
+}
+
+.svg-sprite--user-dims {
+    width: 31px;
+    height: 31px;
+}
+
+.svg-sprite--zoom {
+    background: url("svg/sprite.css-cdc0f9c4.svg") 0 100% no-repeat;
+}
+
+.svg-sprite--zoom-dims {
+    width: 31px;
+    height: 31px;
+}
+

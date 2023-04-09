@@ -1,0 +1,30 @@
+html
+
+	height: 100%
+body
+	font-family: $main-font
+	color: $text-color
+	background-color: $body-bg-color
+	font-weight: 500
+	height: 100%
+	overflow-x: hidden
+input, textarea
+	&:focus::placeholder
+		color: transparent !important
+
+.wrapper
+	display: flex
+	flex-direction: column
+	min-height: 100%
+.main
+	flex: 1 1 auto
+.clear
+	clear: both
+
+// // контейнер
+// .container
+// 	max-width: $container-max-width
+// 	width: $container-width
+// 	margin: 0 auto
+// 	padding: $container-padding
+// Заголовок страницы
