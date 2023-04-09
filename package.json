@@ -41,6 +41,7 @@
     "gulp-webp": "^4.0.1",
     "imagemin-jpeg-recompress": "^7.1.0",
     "imagemin-pngquant": "^9.0.2",
+    "inputmask": "^5.0.8",
     "require-dir": "^1.2.0",
     "sass": "^1.61.0",
     "slick-carousel": "^1.8.1",

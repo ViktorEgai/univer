@@ -255,6 +255,28 @@
 			<a href="/news/" class="news__btn btn btn--transparent"> Все новости</a>
 		</div>
 	</section>
+
+	<div class="form-section">
+		<div class="container">
+			<div class="form-section__wrapper row">
+				<form class="form-section__form form col-md-6 --svg__form-bg">
+					<div class="form__title">Оставьте заявку</div>
+					<input type="text" class="form__input" placeholder="ФИО">
+					<input type="tel" class="form__input" placeholder="Номер телефона">
+					<input type="email" class="form__input" placeholder="Email">
+					<textarea class="form__input form__textarea" placeholder="Комментарий"></textarea>
+					<label for="" class="form__acceptance">
+						<input type="checkbox" class="--svg__checkbox-before" checked>
+						<span>Я принимаю условия <a href="#">политики конфиденциальности</a></span>
+					</label>
+					<button class="form__btn btn">Записаться на курс</button>
+				</form>
+				<div class="form-section__image col-md-6">
+					<img src="./img/form.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
 	</main>
 	@@include('components/page-blocks/_footer.html')
 	@@include('components/page-blocks/_scripts.html')
