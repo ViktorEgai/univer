@@ -12,8 +12,21 @@
     line-height: 146.8%
 
     &::before
+      content: ''
       width: 52px
       height: 52px
       display: block
       flex: 0 0 auto
       margin-right: 23px
+      background-repeat: no-repeat
+      background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='52' height='52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='52' height='52' rx='16' fill='%23F8F8F8'/%3E%3Cpath d='M36 18 23 32l-7-8' stroke='%232C6762' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+@media screen and ( max-width: 768px )
+  .help-item
+    margin-bottom: 20px
+  .help-item:before
+    border-radius: 50%
+    width: 23px
+    height: 23px
+    margin-top: 5px
+    margin-right: 15px
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='23' height='23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='23' height='23' rx='11.5' fill='%23fff'/%3E%3Cpath d='m15.923 7.96-5.75 6.193-3.096-3.538' stroke='%232C6762' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")

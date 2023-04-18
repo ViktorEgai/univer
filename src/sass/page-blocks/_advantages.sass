@@ -7,14 +7,32 @@
     // display: grid
     // grid-template-columns: repeat(4,1fr)
     // gap: 40px
+  &-item
+    height: 100%
   &-item__inner
     background: #F8F8F8
     border-radius: 20px
     padding: 34px 36px 30px
     display: flex
     flex-direction: column
+    // justify-content: space-between
+    height: 100%
+
   &-item__icon
     margin-bottom: 30px
   &-item__title
     font-size: 20px
     line-height: 130%
+@media screen and ( max-width: 1200px )
+  .advantages
+    &-item__inner
+      padding: 30px 20px
+    &-item__title
+      font-size: 18px
+@media screen and ( max-width: 768px )
+  .advantages
+
+    &-item__inner
+      align-items: center
+      text-align: center
+      padding: 34px 20px
