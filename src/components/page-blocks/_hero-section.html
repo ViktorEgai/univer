@@ -19,8 +19,10 @@
 					<div class="hero__text">@@text</div>
 					} @@if (buttons == true ) {
 					<div class="hero__buttons">
+						@@if (transparent_btn == true ) {
 						<a href="#" class="hero__btn btn btn--transparent">Выбрать направление</a>
-						<button class="hero__btn btn popup-btn">Оставить заявку</button>
+						}
+						<button class="hero__btn btn popup-btn">@@btn_text</button>
 					</div>
 					}
 				</div>

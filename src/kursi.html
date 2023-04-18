@@ -8,12 +8,15 @@
   <div class="wrapper">
     @@include('components/page-blocks/_header.html')
     <main class="main">
+      @@include('components/bem-blocks/_breadcrumbs.html', {
+        "title" : "Направления обучения"
+      })
+
       @@include('components/page-blocks/_hero-section.html', {
       "title" : "Курсы по направлению <br> «Медицина»",
       "icon": false,
       "buttons" : false,
-      "text" : "Вы получите все необходимые знания, умения и навыки без отрыва от работы в удобном удаленном формате.
-      Это позволит совмещать работу и учебу и одновременно становиться еще на один шаг ближе к заветному делу жизни.",
+      "text" : "Вы получите все необходимые знания, умения и навыки без отрыва от работы в удобном удаленном формате. Это позволит совмещать работу и учебу и одновременно становиться еще на один шаг ближе к заветному делу жизни.",
       "img_src": "./img/man-doc.jpg"
       })
 
@@ -282,25 +285,8 @@
         </div>
       </section>
 
-      <section class="certificates">
-        <div class="container">
-          <h2 class="certificates__title section-title">Образцы выдаваемых документов</h2>
-          <div class="certificates__wrapper row">
-            <a href="./img/sertificates/4.png" class="certificates-item mb-4  col-md-4 col-6" data-fancybox="gallery">
-              <img src="./img/sertificates/4.png" alt="">
-            </a>
-            <a href="./img/sertificates/5.png" class="certificates-item mb-4  col-md-4 col-6" data-fancybox="gallery">
-              <img src="./img/sertificates/5.png" alt="">
-            </a>
-            <a href="./img/sertificates/6.png" class="certificates-item mb-4  col-md-4 col-6" data-fancybox="gallery">
-              <img src="./img/sertificates/6.png" alt="">
-            </a>
-            <a href="./img/sertificates/7.png" class="certificates-item mb-4  col-md-4 col-6" data-fancybox="gallery">
-              <img src="./img/sertificates/7.png" alt="">
-            </a>
-          </div>
-        </div>
-      </section>
+     
+      @@include('components/page-blocks/_examples.html')
 
       @@include('components/page-blocks/_form-section.html')
 

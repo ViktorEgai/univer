@@ -1,0 +1,31 @@
+.dropdown-section
+  padding: 65px 0
+  &__title
+    margin-bottom: 20px
+  &__text
+    font-weight: 400
+    margin-bottom: 34px
+.dropdown
+  margin-bottom: 14px
+  &__title
+    padding: 20px 40px
+    @include flex(row, center, space-between)
+    background-color: #f7f7f7
+    border-radius: 20px
+    cursor: pointer
+    &.active .dropdown__arrow
+      transform: rotate(180deg )
+  &__arrow
+    width: 24px
+    height: 24px
+    transition: .3s
+  &__body
+    display: none
+    .content
+      padding: 20px 40px
+@media screen and ( max-width: 728px )
+  .dropdown
+    &__title
+      padding: 20px
+    &__body .content
+      padding: 20px

@@ -56,6 +56,7 @@ jQuery(document).ready(function ($) {
 		});
 	}
 	dropdown('.speciality-dropdown__title', '.speciality-dropdown__body' );
+	dropdown('.dropdown__title', '.dropdown__body');
 
 	// load ajax specilaly list on click 
 
