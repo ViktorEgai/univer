@@ -38,10 +38,27 @@ jQuery(document).ready(function ($) {
 	setEqualHeight($(".product-item"));
 
 	// droplist
-	$(".droplist-item__title").on("click", function () {
-		$(this).find(".droplist-item__icon").toggleClass("active");
-		$(this).next().slideToggle(500);
-	});
+	function dropdown(title, content) {
+		$(title).eq(0).addClass('active');
+		$(content).eq(0).slideDown();
+
+		$(title).on("click", function () {
+			if ( $(this).hasClass('active') ) {
+				$(this).removeClass('active');
+				$(this).next().slideUp(500);
+			} else {
+				$(title).removeClass('active');
+				$(content).slideUp(500);
+				$(this).addClass('active');
+				$(this).next().slideDown(500);
+			}
+			
+		});
+	}
+	dropdown('.speciality-dropdown__title', '.speciality-dropdown__body' );
+
+	// load ajax specilaly list on click 
+
 
 	// табы
 	function tabs() {
@@ -77,7 +94,7 @@ jQuery(document).ready(function ($) {
 	tabs();
 
 
-
+	$('.content h2').addClass('section-title');
 	// Input mask
 	$('input[type=tel]').inputmask("+7(999)-999-99-99")
 });

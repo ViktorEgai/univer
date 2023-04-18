@@ -1,3 +1,12 @@
+.--svg__arrow,.--svg__arrow-before::before,.--svg__arrow-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m19 9-7 7-7-7' stroke='%23747474' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.--svg__arrow-before::before {
+    content:'';
+}
+.--svg__arrow-after::after {
+    content:'';
+}
 .--svg__check-sm-white,.--svg__check-sm-white-before::before,.--svg__check-sm-white-after::after{
     background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='23' height='23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='23' height='23' rx='11.5' fill='%23fff'/%3E%3Cpath d='m15.923 7.96-5.75 6.193-3.096-3.538' stroke='%232C6762' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }

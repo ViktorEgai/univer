@@ -17,11 +17,12 @@
 					</h1>
 					@@if ( text !== '' ) {
 					<div class="hero__text">@@text</div>
-					}
+					} @@if (buttons == true ) {
 					<div class="hero__buttons">
 						<a href="#" class="hero__btn btn btn--transparent">Выбрать направление</a>
 						<button class="hero__btn btn popup-btn">Оставить заявку</button>
 					</div>
+					}
 				</div>
 			</div>
 			<div class="order-md-2 order-1 col-md-6 mb-3 mb-md-0">
