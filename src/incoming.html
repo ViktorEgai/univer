@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Университет",
+})
+
+<body>
+  <div class="wrapper">
+    @@include('components/page-blocks/_header.html')
+    <main class="main">
+
+      @@include('components/bem-blocks/_breadcrumbs.html', {
+      "title" : "Поступающим"
+      })
+
+      @@include('components/page-blocks/_hero-section.html', {
+      "title" : "Поступающим",
+      "icon": false,
+      "buttons" : true,
+      "transparent_btn" : false,
+      "btn_text": "Получить бесплатную консультацию",
+      "text" : "Университет постдимпломного профессионального образования предлагает обучение по разным направлениям и разным видам программ дополнительного образования. Определиться с программой обучения и ее объемом, пакетом документов для обучения и другими вопросами поможет менеджер, который будет сопровождать вас на всех этапах образовательного процесса.",
+      "img_src": "./img/incoming.jpg"
+      })
+
+      <section class="incoming">
+        <div class="container">
+          <h2 class="incoming__title section-title">Что нужно для поступления</h2>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="incoming-item">
+                <div class="incoming-item__num">01</div>
+                <div class="incoming-item__content content">
+                  Подать заявку на обучение по выбранному вами направлению:
+                  <ul>
+                    <li> через электронную почту;</li>
+                    <li> через форму обратной связи на сайте;</li>
+                    <li> по номеру телефона;</li>
+                    <li> через личного менеджера (в случае, если вы уже сотрудничаете с нами)</li>
+                  </ul>
+
+                  <p>ВАЖНО! Вы можете связаться с нами любым из указанных способов и мы поможем в подборе программы
+                    обучения!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="incoming-item">
+                <div class="incoming-item__num">02</div>
+                <div class="incoming-item__content content">
+                  <p>Предоставить пакет документов, необходимый для обучения по дополнительной образовательной программе
+                    или программе профессионального обучения.</p>
+
+                  <p>ВАЖНО! Набор документов зависит от выбранного вида и программы обучения и будет озвучен вашим
+                    личным менеджером после выбора программы обучения.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="incoming-item">
+                <div class="incoming-item__num">03</div>
+                <div class="incoming-item__content content">
+                  <p> Получить договор на оказание платных образовательных услуг и на его основании произвести их
+                    оплату.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="incoming-item">
+                <div class="incoming-item__num">04</div>
+                <div class="incoming-item__content content">
+                  <p>Получить доступ к личному кабинету на образовательной онлайн-платформе.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @@include('components/page-blocks/_examples.html')
+      <section class="dropdown-section">
+        <div class="container">
+          <h2 class="dropdown-section__title section-title">Образцы типовых договоров</h2>
+
+          <div class="dropdown">
+            <div class="dropdown__title">
+              <p>Договоры для медицинских и фармацевтических работников</p>
+              <div class="dropdown__arrow --svg__arrow"></div>
+            </div>
+            <div class="dropdown__body">
+              <div class="content">
+                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Но возвращайся,
+                  грустный жаренные скатился дал вдали образ переулка своих.</p>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown__title">
+              <p>Договоры для педагогических работников и специалистов других отраслей</p>
+              <div class="dropdown__arrow --svg__arrow"></div>
+            </div>
+            <div class="dropdown__body">
+              <div class="content">
+                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Но возвращайся,
+                  грустный жаренные скатился дал вдали образ переулка своих.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      @@include('components/page-blocks/_form-section.html')
+
+
+    </main>
+    @@include('components/page-blocks/_footer.html')
+    @@include('components/page-blocks/_scripts.html')
+  </div>
+</body>
+
+</html>
