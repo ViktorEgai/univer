@@ -65,7 +65,7 @@
 								/>
 							</svg>
 						</a>
-						<a href="#" class="header-top-menu-buttons__item search-btn">
+						<a href="#" data-src="#search" data-fancybox class="header-top-menu-buttons__item search-btn">
 							<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									d="M17.8255 18.2396L24.6758 25.0898M12.117 20.523C7.70313 20.523 4.125 16.9449 4.125 12.531C4.125 8.11719 7.70313 4.53906 12.117 4.53906C16.5308 4.53906 20.1089 8.11719 20.1089 12.531C20.1089 16.9449 16.5308 20.523 12.117 20.523Z"
@@ -81,11 +81,10 @@
 				<div class="d-block d-lg-none">
 					<button class="header-menu-btn">
 						<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24.375 22.5H5.625" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M24.375 15H5.625" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M24.375 7.5H5.625" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
+							<path d="M24.375 22.5H5.625" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M24.375 15H5.625" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M24.375 7.5H5.625" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
 					</button>
 				</div>
 			</div>
@@ -136,14 +135,16 @@
 	</div>
 </section>
 
-      <section class="org-info">
+      <section class="content">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 mb-4 mb-md-0"><h2 class="org-info__title section-title">Курсы профессионального <br> корпоративного обучения</h2></div>
+            <div class="col-md-6 mb-4 mb-md-0">
+              <h2 >Курсы профессионального <br> корпоративного обучения</h2>
+            </div>
             <div class="col-md-6">
-              <div class="org-info__text">
-                Мы оптимизируем учебные программы под конкретные бизнес-задачи компании. Подобный подход, учитывающий специфику деятельности организации, позволяет адаптировать обучение под профессиональные потребности и интересы слушателей и сделать его более улубоким и персонализированным. Длительность обучения и интенсивность проведения занятий определяется заказчиком. Просто оставьте заявку, и мы свяжемся с вами для обсуждения деталей.
-              </div>
+              
+               <p> Мы оптимизируем учебные программы под конкретные бизнес-задачи компании. Подобный подход, учитывающий специфику деятельности организации, позволяет адаптировать обучение под профессиональные потребности и интересы слушателей и сделать его более улубоким и персонализированным. Длительность обучения и интенсивность проведения занятий определяется заказчиком. Просто оставьте заявку, и мы свяжемся с вами для обсуждения деталей.</p>
+              
             </div>
           </div>
         </div>
@@ -533,6 +534,31 @@
 		</div>
 	</div>
 </footer>
+<div id="search" class="search">
+	<button class="search-close">
+		<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M20.3253 1.75L18.5789 0L10.346 8.25L2.11307 0L0.366699 1.75L8.59961 10L0.366699 18.25L2.11307 20L10.346 11.75L18.5789 20L20.3253 18.25L12.0924 10L20.3253 1.75Z"
+				fill="white"
+			/>
+		</svg>
+	</button>
+	<div class="container">
+		<form class="search-form">
+			<input type="search" class="search-form__input" placeholder="Например: Стоматология" />
+			<button class="search-form__btn btn btn--colored">Поиск</button>
+		</form>
+		<div class="search-result">
+			<div class="search-result__count">Найдено 2 резульата</div>
+			<ul class="search-result-list">
+				<li class="search-result-list__item">
+					<a href="#">Курс стоматология</a>
+					<a href="#">Курс Детская стоматология</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
     <script
 	src="https://code.jquery.com/jquery-3.6.4.min.js"
