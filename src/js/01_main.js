@@ -1,8 +1,12 @@
 jQuery(document).ready(function ($) {
-	function closeOrderPopup() {
-		$(".popup").removeClass("popup--active");
-		$(".popup-wrapper").removeClass("popup-wrapper--active");
+	function togglerMobileMenu() {
+		$('.header-menu-btn').on('click', function() {
+			$(this).toggleClass('active');
+			$('.header-mobile-menu').slideToggle(500);
+		})
 	}
+	togglerMobileMenu();
+
 
 	function toggleSearch() {
 		$('.search-btn').on('click', function(e)  { 
@@ -17,7 +21,7 @@ jQuery(document).ready(function ($) {
 		});
 	}
 	toggleSearch();
-	
+
 	const reviewsSlider = () => {
 		$(".reviews-slider").slick({
 			dots: false,

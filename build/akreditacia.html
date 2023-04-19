@@ -102,6 +102,31 @@
 		</div>
 	</div>
 </header>
+<div class="header-mobile-menu">
+	<div class="container">
+		<ul class="header-menu">
+			<li class="header-menu__item"><a href="#">Направления обучения</a></li>
+			<li class="header-menu__item"><a href="#">Об университете</a></li>
+			<li class="header-menu__item"><a href="#">НМО</a></li>
+			<li class="header-menu__item"><a href="#">Акредитация</a></li>
+			<li class="header-menu__item"><a href="#">Поступающим</a></li>
+			<li class="header-menu__item"><a href="#">Организациям</a></li>
+			<li class="header-menu__item"><a href="#">Контакты</a></li>
+		</ul>
+		<a href="#" class="header-phone phone">+7 (495) 513-11-12</a>
+		<ul class="header-top-menu">
+			<li class="header-top-menu__item"><a href="#">Правовые документы</a></li>
+			<li class="header-top-menu__item"><a href="#">Отзывы</a></li>
+			<li class="header-top-menu__item"><a href="#">Частые вопросы</a></li>
+		</ul>
+		<ul class="header-top-menu">
+			<li class="header-top-menu__item"><a href="#">Личный кабинет</a></li>
+			<li class="header-top-menu__item"><a href="#">Версия для слабовидящих</a></li>
+			<li class="header-top-menu__item"><a href="#">Поиск</a></li>
+		</ul>
+		<button class="header-mobile-menu__btn btn" data-fancybox data-src="#popup">Связаться с нами</button>
+	</div>
+</div>
 
     <main class="main">
 
@@ -123,7 +148,7 @@
 					 
 					<div class="hero__buttons">
 						
-						<button class="hero__btn btn popup-btn">Получить бесплатную консультацию</button>
+						<button class="hero__btn btn" data-src="#popup" data-fancybox>Получить бесплатную консультацию</button>
 					</div>
 					
 				</div>
@@ -707,6 +732,18 @@
 			</div>
 		</div>
 	</div>
+</div>
+<div class="popup" id="popup">
+	<form class="form">
+		<div class="form__title">Оставьте заявку</div>
+		<div class="form__text">Мы свяжемся с вами в ближайшее рабочее время</div>
+		<input type="text" class="form__input" placeholder="ФИО" />
+		<input type="tel" class="form__input" placeholder="Номер телефона" />
+		<input type="email" class="form__input" placeholder="Email" />
+
+		<button class="form__btn btn btn--colored">Отправить</button>
+		<div class="form__notice">Нажимая на кнопку Отправить, я принимаю условия<a href="/privacy-policy/"> политики конфиденциальности</a></div>
+	</form>
 </div>
 
     <script
