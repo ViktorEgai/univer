@@ -2,6 +2,8 @@
   position: relative
   display: flex
   align-items: center
+  a
+    transition: .3s
   &__wrapper
     position: relative
     z-index: 2
@@ -31,6 +33,10 @@
     top: 0
     left: 0
     width: 100%
+
+@media screen and ( min-width: 992px )
+  .contacts a:hover
+    color: $main-color
 @media screen and ( max-width: 768px )
   .contacts
     display: block
@@ -40,3 +46,7 @@
       padding: 0
     .map
       position: static
+      padding-bottom: 60px
+      height: 380px
+      img
+        height: 100%

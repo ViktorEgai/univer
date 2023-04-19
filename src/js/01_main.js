@@ -193,4 +193,10 @@ nextArrow: `<button class="next"><svg width="37" height="37" viewBox="0 0 37 37"
 	$(".content h2").addClass("section-title");
 	// Input mask
 	$("input[type=tel]").inputmask("+7(999)-999-99-99");
+
+	$('.section-title').attr('data-aos', 'fade-right');
+	
+	AOS.init({
+		duration: 600
+	});
 });

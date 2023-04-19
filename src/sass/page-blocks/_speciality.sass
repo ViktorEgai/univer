@@ -1,5 +1,5 @@
 .speciality
-  padding: 65px 0
+  padding-bottom: 65px
   &__title
     margin-bottom: 30px
   &-dropdown
@@ -32,6 +32,7 @@
     padding: 30px
     min-height: 110px
     text-align: center
+    transition: .3s
   &-item__title
     font-size: 18px
     line-height: 130%
@@ -39,6 +40,9 @@
   &-item__count
     font-size: 12px
     line-height: 130%
+@media screen and ( min-width: 992px )
+  .speciality-item:hover
+    box-shadow: 0px 4px 20px rgba(44, 103, 98, .5)
 @media screen and ( max-width: 1200px )
   .speciality
     &-dropdown__title
