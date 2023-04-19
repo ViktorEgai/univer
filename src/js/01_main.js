@@ -4,6 +4,20 @@ jQuery(document).ready(function ($) {
 		$(".popup-wrapper").removeClass("popup-wrapper--active");
 	}
 
+	function toggleSearch() {
+		$('.search-btn').on('click', function(e)  { 
+			e.preventDefault();
+
+			$('#search').slideDown(500)
+		});
+		$('.search-close').on('click', function(e)  { 
+			e.preventDefault();
+
+			$('#search').slideUp(500)
+		});
+	}
+	toggleSearch();
+	
 	const reviewsSlider = () => {
 		$(".reviews-slider").slick({
 			dots: false,

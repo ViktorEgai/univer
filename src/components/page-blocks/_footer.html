@@ -58,27 +58,31 @@
 	</div>
 </footer>
 <div id="search" class="search">
-	<button class="search-close">
-		<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path
-				d="M20.3253 1.75L18.5789 0L10.346 8.25L2.11307 0L0.366699 1.75L8.59961 10L0.366699 18.25L2.11307 20L10.346 11.75L18.5789 20L20.3253 18.25L12.0924 10L20.3253 1.75Z"
-				fill="white"
-			/>
-		</svg>
-	</button>
-	<div class="container">
-		<form class="search-form">
-			<input type="search" class="search-form__input" placeholder="Например: Стоматология" />
-			<button class="search-form__btn btn btn--colored">Поиск</button>
-		</form>
-		<div class="search-result">
-			<div class="search-result__count">Найдено 2 резульата</div>
-			<ul class="search-result-list">
-				<li class="search-result-list__item">
-					<a href="#">Курс стоматология</a>
-					<a href="#">Курс Детская стоматология</a>
-				</li>
-			</ul>
+	<div class="search__wrapper">
+		<div class="container">
+			<button class="search-close">
+				<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M20.3253 1.75L18.5789 0L10.346 8.25L2.11307 0L0.366699 1.75L8.59961 10L0.366699 18.25L2.11307 20L10.346 11.75L18.5789 20L20.3253 18.25L12.0924 10L20.3253 1.75Z"
+						fill="white"
+					/>
+				</svg>
+			</button>
+			<form class="search-form">
+				<input type="search" class="search-form__input" placeholder="Например: Стоматология" />
+				<button class="search-form__btn btn btn--colored">Поиск</button>
+			</form>
+			<div class="search-result">
+				<div class="search-result__count">Найдено 2 резульата</div>
+				<ul class="search-result-list">
+					<li class="search-result-list__item">
+						<a href="#">Курс стоматология</a>
+					</li>
+					<li class="search-result-list__item">
+						<a href="#">Курс Детская стоматология</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
