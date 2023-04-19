@@ -1,0 +1,39 @@
+.students
+  padding: 60px 0
+  margin-bottom: 60px
+  background-color: #f7f7f7
+  &__title
+    margin-bottom: 30px
+
+  &-slider__item
+    margin: 0 20px
+    img
+      width: 100%
+    p
+      text-align: center
+      margin-top: 10px
+  .slick-list
+    margin: 0 -20px
+  .slick-arrow
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 1
+    &.prev
+      left: -50px
+    &.next
+      right: -50px
+@media screen and ( max-width:768px )
+  .students
+    .slick-arrow
+      top: 120%
+      &.prev
+        left: 0
+      &.next
+        right: 0
+    &-slider__item
+      margin: 0 10px
+      p
+        font-size: 14px
+    .slick-list
+      margin: 0 -10px

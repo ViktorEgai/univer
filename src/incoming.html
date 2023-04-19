@@ -19,18 +19,18 @@
       "buttons" : true,
       "transparent_btn" : false,
       "btn_text": "Получить бесплатную консультацию",
-      "text" : "Университет постдимпломного профессионального образования предлагает обучение по разным направлениям и разным видам программ дополнительного образования. Определиться с программой обучения и ее объемом, пакетом документов для обучения и другими вопросами поможет менеджер, который будет сопровождать вас на всех этапах образовательного процесса.",
+      "text" : "Университет постдимпломного профессионального образования предлагает обучение по разным направлениям иразным видам программ дополнительного образования. Определиться с программой обучения и ее объемом, пакетом документов для обучения и другими вопросами поможет менеджер, который будет сопровождать вас на всех этапах образовательного процесса.",
       "img_src": "./img/incoming.jpg"
       })
 
-      <section class="incoming">
+      <section class="num-list">
         <div class="container">
-          <h2 class="incoming__title section-title">Что нужно для поступления</h2>
+          <h2 class="num-list__title section-title">Что нужно для поступления</h2>
           <div class="row">
             <div class="col-md-6 mb-3">
-              <div class="incoming-item">
-                <div class="incoming-item__num">01</div>
-                <div class="incoming-item__content content">
+              <div class="num-list-item">
+                <div class="num-list-item__num">01</div>
+                <div class="num-list-item__content content">
                   Подать заявку на обучение по выбранному вами направлению:
                   <ul>
                     <li> через электронную почту;</li>
@@ -45,9 +45,9 @@
               </div>
             </div>
             <div class="col-md-6 mb-3">
-              <div class="incoming-item">
-                <div class="incoming-item__num">02</div>
-                <div class="incoming-item__content content">
+              <div class="num-list-item">
+                <div class="num-list-item__num">02</div>
+                <div class="num-list-item__content content">
                   <p>Предоставить пакет документов, необходимый для обучения по дополнительной образовательной программе
                     или программе профессионального обучения.</p>
 
@@ -57,18 +57,18 @@
               </div>
             </div>
             <div class="col-md-6 mb-3">
-              <div class="incoming-item">
-                <div class="incoming-item__num">03</div>
-                <div class="incoming-item__content content">
+              <div class="num-list-item">
+                <div class="num-list-item__num">03</div>
+                <div class="num-list-item__content content">
                   <p> Получить договор на оказание платных образовательных услуг и на его основании произвести их
                     оплату.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 mb-3">
-              <div class="incoming-item">
-                <div class="incoming-item__num">04</div>
-                <div class="incoming-item__content content">
+              <div class="num-list-item">
+                <div class="num-list-item__num">04</div>
+                <div class="num-list-item__content content">
                   <p>Получить доступ к личному кабинету на образовательной онлайн-платформе.</p>
                 </div>
               </div>
@@ -78,6 +78,7 @@
       </section>
 
       @@include('components/page-blocks/_examples.html')
+
       <section class="dropdown-section">
         <div class="container">
           <h2 class="dropdown-section__title section-title">Образцы типовых договоров</h2>
@@ -109,7 +110,34 @@
         </div>
       </section>
 
+      
+      @@include('components/page-blocks/_payment.html')
 
+      <section class="info-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <img src="./img/calc.jpg" alt="" class="info-block__image">
+            </div>
+            <div class="col-md-6">
+              <div class="info-block__descr">
+                <h2 class="info-block__title section-title">Стоимость обучуния</h2>
+                <div class="info-block__content content">
+                 <p> На сайте не отражена стоимость обучения по конкретным образовательным программам. Это связано с персонализированным подбором программы и учебной нагрузки по конкретной программе.</p>
+
+<p>Необходимость индивидуального подбора программы обоснована требованиями нормативно-правовых актов и профессиональных стандартов, согласно которым объем программы может отличаться в зависимости от ее типа, уровня образования слушателя и выбранной темы.</p>
+
+<p>
+  Все вопросы о стоимости обучения можно задать, связавшись с нами по электронной почте или по номеру телефона 
+  <a href="#">+7(495) 021-12-00</a>
+</p>
+                </div>
+                <button class="info-block__btn btn" data-src="#popup" data-fancybox>Получить консультацию</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       @@include('components/page-blocks/_form-section.html')
 
 

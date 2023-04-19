@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Университет",
+})
+
+<body>
+  <div class="wrapper">
+    @@include('components/page-blocks/_header.html')
+    <main class="main">
+
+      @@include('components/bem-blocks/_breadcrumbs.html', {
+      "title" : "Организациям"
+      })
+
+      @@include('components/page-blocks/_hero-section.html', {
+      "title" : "Организациям",
+      "icon": false,
+      "buttons" : true,
+      "transparent_btn" : false,
+      "btn_text": "Получить коммерческое предложение",
+      "text" : "Университет постдипломного профессионального образования предлагает корпоративное обучение, в рамках которого программы и учебные планы могут быть подобраны или разработаны согласно целям и задачам вашей организации.",
+      "img_src": "./img/org.jpg"
+      })
+      <section class="org-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0"><h2 class="org-info__title section-title">Курсы профессионального <br> корпоративного обучения</h2></div>
+            <div class="col-md-6">
+              <div class="org-info__text">
+                Мы оптимизируем учебные программы под конкретные бизнес-задачи компании. Подобный подход, учитывающий специфику деятельности организации, позволяет адаптировать обучение под профессиональные потребности и интересы слушателей и сделать его более улубоким и персонализированным. Длительность обучения и интенсивность проведения занятий определяется заказчиком. Просто оставьте заявку, и мы свяжемся с вами для обсуждения деталей.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="num-list">
+        <div class="container">
+          <h2 class="num-list__title section-title">Как оформить корпоративное обучение сотрудников</h2>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="num-list-item">
+                <div class="num-list-item__num">01</div>
+                <div class="num-list-item__content content">
+                  <h3 class="num-list-item__title">Формирование потребностей</h3>
+                  <p>Вы можете самостоятельно сформировать список потребностей и запросов в обучении Ваших сотрудников или обратиться за помощью к менеджерам нашего Университета.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="num-list-item">
+                <div class="num-list-item__num">02</div>
+                <div class="num-list-item__content content">
+                  <h3 class="num-list-item__title">Консультация с экспертом</h3>
+                  <p>На данном этапе мы проводим анализ Ваших потребностей, привлекая экспертов в Вашей области деятельности, чтобы выявить наиболее важные и актуальные вопросы, которые должны быть рассмотрены в рамках программы обучения.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="num-list-item">
+                <div class="num-list-item__num">03</div>
+                <div class="num-list-item__content content">
+                  <h3 class="num-list-item__title">Обсуждение условий обучения и подготовка графика обучения</h3>
+                  <p>Исходя из Ваших потребностей, мы готовим окончательный вариант учебной программы и удобный график обучения с учетом обозначенных Вами условий.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="num-list-item">
+                <div class="num-list-item__num">04</div>
+                <div class="num-list-item__content content">
+                  <h3 class="num-list-item__title">Предоставление доступа к учебным материалам</h3>
+                  <p>После согласования программы обучения и получения оплаты согласно договору мы предоставляем доступы к личным кабинетам для прохождения обучения на современной онлайн-платформе.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="students">
+        <div class="container">
+          <h2 class="students__title section-title">У нас уже обучаются</h2>
+          <div class="students-slider">
+            <div class="students-slider__item">
+              <img src="./img/students/1.png" alt="">
+              <p>Вирилис</p>
+            </div>
+            <div class="students-slider__item">
+              <img src="./img/students/2.png" alt="">
+              <p>Дыхание Жизни</p>
+            </div>
+            <div class="students-slider__item">
+              <img src="./img/students/3.png" alt="">
+              <p>Профимед</p>
+            </div>
+            <div class="students-slider__item">
+              <img src="./img/students/4.png" alt="">
+              <p>Арт Медикс</p>
+            </div>
+            <div class="students-slider__item">
+              <img src="./img/students/5.png" alt="">
+              <p>Новомед - Т</p>
+            </div>
+            <div class="students-slider__item">
+              <img src="./img/students/6.png" alt="">
+              <p>Мед-центр Надежда</p>
+            </div>
+          </div>
+        </div>
+      </section>
+       <section class="num-list">
+        <div class="container">
+          <h2 class="num-list__title section-title">Как проходит обучение</h2>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="num-list-item">
+                <div class="num-list-item__num">01</div>
+                <div class="num-list-item__content content">
+                  <h3 class="num-list-item__title">Онлайн</h3>
+                  <p>Обучение проходит дистанционно в заочной или очно-заочной форме. Это означает, что повышать свой профессиональный уровень можно в любое время и в любом месте.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="num-list-item">
+                <div class="num-list-item__num">02</div>
+                <div class="num-list-item__content content">
+                  <h3 class="num-list-item__title">Удобное время обучения</h3>
+                  <p>Доступ к материалам на онлайн-платформе или через мобильное приложение открыт 24/7. Время вебинаров согласуется заранее с учетом программы обучения.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="num-list-item">
+                <div class="num-list-item__num">03</div>
+                <div class="num-list-item__content content">
+                  <h3 class="num-list-item__title">Документы о прохождении обучения</h3>
+                  <p>Удоствоверение о повышении квалификации или диплом профессиональной переподготовки, а также дополнительные документы по запросу (протокол проверки знаний и др.) направляются на адрес организации в течение двух дней после завершения обучения.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="num-list-item">
+                <div class="num-list-item__num">04</div>
+                <div class="num-list-item__content content">
+                  <h3 class="num-list-item__title">Длительность</h3>
+                  <p>Зависит от выбранного курса обучения — от нескольких дней до нескольких месяцев.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @@include('components/page-blocks/_payment.html')
+
+     <section class="variations">
+      <div class="container">
+        <h2 class="variations__title section-title">Варианты сотрудничества</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="variations-item grey">
+              <div class="variations-item__title">Корпоративный договор сроком на 6 месяцев</div>
+              <ul class="variations-item__list">
+                <li class="variations-item__list-item">Личный менеджер</li>
+                <li class="variations-item__list-item">Дополнительная скидка 10% на обучение ″вне плана″</li>
+                <li class="variations-item__list-item">Включение в программу лояльности</li>
+                <li class="variations-item__list-item">Доставка курьерской почтой за наш счёт</li>   
+              </ul>
+              <a href="#" class="variations-item__btn btn ">Узнать больше</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="variations-item light-green">
+              <div class="variations-item__title">Корпоративный договор сроком на 6 месяцев</div>
+              <ul class="variations-item__list">
+                <li class="variations-item__list-item">Личный менеджер</li>
+                <li class="variations-item__list-item">Индивидуальное методическое сопровождение</li>
+                <li class="variations-item__list-item">Индивидуальное юридическое сопровождение</li>
+                <li class="variations-item__list-item">Дополнительная скидка 15% на обучение ″вне плана″</li>   
+                <li class="variations-item__list-item">Включение в программу лояльности</li>   
+                <li class="variations-item__list-item">Доставка курьерской почтой за наш счёт</li>   
+              </ul>
+              <a href="#" class="variations-item__btn btn ">Узнать больше</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="variations-item green">
+              <div class="variations-item__title">Индивидуальные условия обучения специалистов</div>
+              <ul class="variations-item__list">
+                <li class="variations-item__list-item">Фиксация стоимости услуг в течение года</li>
+                <li class="variations-item__list-item">Индивидуальный менеджер</li>
+                <li class="variations-item__list-item">Доставка 1 классом почтой России</li>
+                <li class="variations-item__list-item">Включение в программу лояльности</li>   
+                
+              </ul>
+              <a href="#" class="variations-item__btn btn ">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+      @@include('components/page-blocks/_form-section.html')
+
+
+    </main>
+    @@include('components/page-blocks/_footer.html')
+    @@include('components/page-blocks/_scripts.html')
+  </div>
+</body>
+
+</html>

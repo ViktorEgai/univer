@@ -1,0 +1,42 @@
+.contacts
+  position: relative
+  display: flex
+  align-items: center
+  &__wrapper
+    position: relative
+    z-index: 2
+    border-radius: 20px
+    background-color: #fff
+    padding: 40px
+    max-width: 420px
+  &__title
+    margin-bottom: 30px
+
+  &-list__item
+    font-weight: 400
+    font-size: 18px
+    line-height: 155%
+    margin-bottom: 1em
+  &-list__item-title
+    font-weight: 700
+
+  &-social
+    display: flex
+    align-items: center
+
+  &-social__item
+    margin-right: 10px
+  .map
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+@media screen and ( max-width: 768px )
+  .contacts
+    display: block
+    &__wrapper
+      border-radius: 0
+      margin-bottom: 30px
+      padding: 0
+    .map
+      position: static
