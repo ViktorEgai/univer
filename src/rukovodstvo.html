@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Университет",
+})
+
+<body>
+  <div class="wrapper">
+    @@include('components/page-blocks/_header.html')
+    <main class="main">
+
+      @@include('components/bem-blocks/_breadcrumbs.html', {
+      "title" : "Об университете"
+      })
+
+      @@include('components/page-blocks/_about-nav.html')
+
+
+      @@include('components/page-blocks/_hero-section.html', {
+      "title" : "Руководство",
+      "icon": false,
+      "buttons" : false,
+      "transparent_btn" : false,
+      "btn_text": "Положение о структурном подразделении",
+      "text" : "Педагогический (научно-педагогический) состав",
+      "img_src": "./img/ruk.jpg"
+      })
+
+      <section class="content" data-aos="fade-down">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+
+              <img src="./img/bis-woman.jpg" alt="" class="full">
+              <p style="font-size: 22px; font-weight: 500">Бакаева Татьяна Александровна</p>
+              <p>Генеральный директор </p>
+            </div>
+            <div class="col-md-6">
+              <h2>Общие сведения</h2>
+              <p>
+                <b>Уровень образования: </b>
+                Московский государственный университет имени М.В. Ломоносова <br>
+                Диплом №2009884656467 <br>
+                1980-1986, специалитет
+              </p>
+
+              <p>
+                <b> Опыт работы: </b>
+                14 лет общий <br>
+                6 лет педагогический
+              </p>
+
+              <p>
+                <b> Дополнительное образование: </b>
+                Повышение квалификации «Оказание первой медицинской помощи» (указать даты обучения и наименование
+                организации, где обучалась), повышение квалификации «Библиотечно-информационная деятельность»,
+                профессиональная переподготовка «Педагог дополнительного профессионального образования»)
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content" data-aos="fade-down">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+
+              <img src="./img/dir.jpg" alt="" class="full">
+              <p style="font-size: 22px; font-weight: 500">Волошин Роман Евгеньевич</p>
+              <p>Генеральный директор </p>
+            </div>
+            <div class="col-md-6">
+              <h2>Общие сведения</h2>
+              <p>
+                <b>Уровень образования: </b>
+                Московский государственный университет имени М.В. Ломоносова <br>
+                Диплом №2009884656467 <br>
+                1980-1986, специалитет
+              </p>
+
+              <p>
+                <b> Опыт работы: </b>
+                14 лет общий <br>
+                6 лет педагогический
+              </p>
+
+              <p>
+                <b> Дополнительное образование: </b>
+                Повышение квалификации «Оказание первой медицинской помощи» (указать даты обучения и наименование
+                организации, где обучалась), повышение квалификации «Библиотечно-информационная деятельность»,
+                профессиональная переподготовка «Педагог дополнительного профессионального образования»)
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      @@include('components/page-blocks/_form-section.html')
+
+    </main>
+    @@include('components/page-blocks/_footer.html')
+    @@include('components/page-blocks/_scripts.html')
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Университет",
+})
+
+<body>
+  <div class="wrapper">
+    @@include('components/page-blocks/_header.html')
+    <main class="main">
+
+      @@include('components/bem-blocks/_breadcrumbs.html', {
+      "title" : "Об университете"
+      })
+
+      @@include('components/page-blocks/_about-nav.html')
+
+
+      @@include('components/page-blocks/_hero-section.html', {
+      "title" : "Стипендии",
+      "icon": false,
+      "buttons" : false,
+      "transparent_btn" : false,
+      "btn_text": "Положение о структурном подразделении",
+      "text" : "Стипендии и иные виды материальной поддержки",
+      "img_src": "./img/stip.jpg"
+      })
+
+      <section class="content" data-aos="fade-down">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+
+              <p>
+                Стипендии и иные виды материальной или социальной поддержки слушателям не предоставляются. Общежития для слушателей не предусмотрены. ООО «Университет постдипломного профессионального образования» не оказывает содействия слушателям в трудоустройстве.
+              </p>
+
+             
+
+            </div>
+         
+          </div>
+        </div>
+      </section>
+
+
+      @@include('components/page-blocks/_form-section.html')
+
+    </main>
+    @@include('components/page-blocks/_footer.html')
+    @@include('components/page-blocks/_scripts.html')
+  </div>
+</body>
+
+</html>
