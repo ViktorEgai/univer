@@ -18,6 +18,8 @@
     line-height: 137.02%
     color: #717171
     margin-left: 38px
+    &.active a
+      text-decoration: underline
   &-phone
     margin: 0 32px
     font-weight: 500
@@ -53,6 +55,9 @@
     box-shadow: 0px 4px 20px rgba(210, 210, 210, 0.3)
     border-radius: 20px
     transition: .3s
+  &-menu__item.active a
+    background-color: $main-color
+    color: #fff
   &-mobile-menu
     display: none
 @media screen and ( min-width: 992px )

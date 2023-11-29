@@ -8,15 +8,33 @@
 	<div class="wrapper">
 		@@include('components/page-blocks/_header.html')
 	<main class="main">
-	@@include('components/page-blocks/_hero-section.html', {
-		"title" : "Получите дополнительно дистанционное профессиональное медицинское образование ",
-		"icon": true,
-		"text" : "",
-		"buttons" : true,
-		"transparent_btn": true,
-		"btn_text": "Оставить заявку",
-		"img_src": "./img/doc.jpg"
-	})
+		<div class="hero-slider">
+			<div class="hero-slider__item">
+				@@include('components/page-blocks/_hero-section.html', {
+					"title" : "Добро пожаловать в УППО.",
+					"icon": false,
+					"text" : "Гибкое онлайн-обучение. <br> <br> Создано экспертами, предназначено для профессионалов",
+					"buttons" : true,
+					"transparent_btn": true,
+					"btn_text": "Оставить заявку",
+					"img_src": "./img/doc-3.png"
+				})
+			</div>
+			<div class="hero-slider__item">
+				@@include('components/page-blocks/_hero-section.html', {
+					"title" : "Получите дополнительно дистанционное профессиональное медицинское образование ",
+					"icon": true,
+					"text" : "",
+					"buttons" : true,
+					"transparent_btn": true,
+					"btn_text": "Оставить заявку",
+					"img_src": "./img/doc.jpg"
+				})
+			</div>
+		</div>
+	
+
+	
 	<section class="advantages">
 		<div class="container">
 			<h2 class="advantages__title section-title">Является одним из ведущих учебных заведений России в области обучения специалистов с медицинским образованием</h2>
@@ -27,7 +45,7 @@
 							<div class="advantages-item__icon">
 								<img src="./img/icons/Bank.svg" alt="">
 							</div>
-							<div class="advantages-item__title">НПО под ключ,<br> более 500 программ</div>
+							<div class="advantages-item__title">НМО под ключ,<br> более 500 программ</div>
 						</div>
 					</div>
 				</div>
@@ -100,44 +118,77 @@
 
 	<section class="reviews">
 		<div class="container">
-			<h2 class="reviews__title section-title">
-				Отзывы о нашем <br> университете
-			</h2>
-			<div class="reviews-slider" data-aos="fade-down" >
+			<div class="row mb-5">
+				<div class="col-md-6">
+					<h2 class="reviews__title section-title">
+						Отзывы о нашем <br> университете
+					</h2>
+					<div class="reviews__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пор проектах ipsum что города безорфографичный повстречался знаках это подзаголовок!</div>
+				</div>
+				<div class="col-md-6">
+					<div class="reviews-thumbs">
+						<img src="./img/reviews-dots.svg" alt="">
+						<img src="./img/user-1.png" alt="">
+						<img src="./img/user-1.png" alt="">
+						<img src="./img/user-1.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="reviews-slider" data-aos="fade-down">
 				<div class="reviews-slider__item">
 					<div class="reviews-slider__info">
 						<div class="reviews-slider__photo"><img src="./img/user-1.png" alt=""></div>
-						<div class="reviews-slider__name">Имя Фамилия</div>
+						<div>
+							<div class="reviews-slider__name">Имя Фамилия</div>
+							<a href="#" class="reviews-slider__link">Имя-Ссылка на курс</a>
+						</div>
 					</div>
 					<div class="reviews-slider__text">Университет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподгуУниверситет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподготовку</div>
+					<div class="reviews-slider__date">20.04.2023г.</div>
 				</div>
 				<div class="reviews-slider__item">
 					<div class="reviews-slider__info">
 						<div class="reviews-slider__photo"><img src="./img/user-1.png" alt=""></div>
-						<div class="reviews-slider__name">Имя Фамилия</div>
+						<div>
+							<div class="reviews-slider__name">Имя Фамилия</div>
+							<a href="#" class="reviews-slider__link">Имя-Ссылка на курс</a>
+						</div>
 					</div>
 					<div class="reviews-slider__text">Университет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподгуУниверситет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподготовку</div>
+					<div class="reviews-slider__date">20.04.2023г.</div>
 				</div>
 				<div class="reviews-slider__item">
 					<div class="reviews-slider__info">
 						<div class="reviews-slider__photo"><img src="./img/user-1.png" alt=""></div>
-						<div class="reviews-slider__name">Имя Фамилия</div>
+						<div>
+							<div class="reviews-slider__name">Имя Фамилия</div>
+							<a href="#" class="reviews-slider__link">Имя-Ссылка на курс</a>
+						</div>
 					</div>
 					<div class="reviews-slider__text">Университет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподгуУниверситет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподготовку</div>
+					<div class="reviews-slider__date">20.04.2023г.</div>
 				</div>
 				<div class="reviews-slider__item">
 					<div class="reviews-slider__info">
 						<div class="reviews-slider__photo"><img src="./img/user-1.png" alt=""></div>
-						<div class="reviews-slider__name">Имя Фамилия</div>
+						<div>
+							<div class="reviews-slider__name">Имя Фамилия</div>
+							<a href="#" class="reviews-slider__link">Имя-Ссылка на курс</a>
+						</div>
 					</div>
 					<div class="reviews-slider__text">Университет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподгуУниверситет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподготовку</div>
+					<div class="reviews-slider__date">20.04.2023г.</div>
 				</div>
 				<div class="reviews-slider__item">
 					<div class="reviews-slider__info">
 						<div class="reviews-slider__photo"><img src="./img/user-1.png" alt=""></div>
-						<div class="reviews-slider__name">Имя Фамилия</div>
+						<div>
+							<div class="reviews-slider__name">Имя Фамилия</div>
+							<a href="#" class="reviews-slider__link">Имя-Ссылка на курс</a>
+						</div>
 					</div>
 					<div class="reviews-slider__text">Университет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподгуУниверситет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподготовку</div>
+					<div class="reviews-slider__date">20.04.2023г.</div>
 				</div>
 			</div>
 			<button class="btn  reviews__btn">Оставить свой отзыв</button>

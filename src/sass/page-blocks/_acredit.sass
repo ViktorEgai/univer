@@ -1,0 +1,44 @@
+.acredit
+  padding: 60px 0
+  counter-reset: item
+  &__title
+    margin-bottom: 32px
+  &-item
+    border-radius: 20px
+    background: #F8F8F8
+    padding: 30px 28px
+    min-height: 310px
+    position: relative
+    &::after
+      content: '0' counter(item)
+      counter-increment: item
+      @include font(18px, 144%,500)
+      color: $main-color
+      position: absolute
+      bottom: 26px
+      right: 26px
+      z-index: 1
+  &-item__title
+    @include font(18px, 130%,500)
+    color: #171717
+    margin-bottom: 18px
+  &-item__text
+    @include font(14px,146%)
+    color: #060606
+  &__btn
+    margin: 40px auto 0
+    max-width: 260px
+    width: 100%
+@media screen and ( max-width: 992px )
+  .acredit
+    padding: 30px 0
+    &__title
+      margin-bottom: 20px
+    &-item
+      min-height: 200px
+      padding: 30px 20px
+    &-item__title
+      font-size: 18px
+      margin-bottom: 18px
+    &-item__text
+      font-size: 14px

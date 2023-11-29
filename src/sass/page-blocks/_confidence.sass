@@ -1,0 +1,61 @@
+.confidence
+  padding: 60px 0
+  &__bottom
+    background-color: $main-color
+    position: relative
+    padding: 110px 100px 50px 50px
+    border-radius: 20px
+    color: #fff
+
+    &::before
+      content: ''
+      position: absolute
+      top: 20px
+      right: 20px
+      width: 52px
+      height: 52px
+      display: block
+      flex: 0 0 auto
+
+      background-repeat: no-repeat
+      background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='52' height='52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='52' height='52' rx='16' fill='%23F8F8F8'/%3E%3Cpath d='M36 18 23 32l-7-8' stroke='%232C6762' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    &-title
+      font-size: 30px
+  &__top
+    background-color: #F8F8F8
+    border-radius: 20px
+    padding: 40px 50px 30px
+    background-size: cover
+    margin-bottom: 20px
+    &-title
+      font-size: 30px
+      margin-bottom: 160px
+    &-text
+      max-width: 340px
+      font-size: 18px
+@media screen and ( max-width: 992px )
+  .confidence
+    &__top
+
+      padding: 30px 20px
+      margin-bottom: 10px
+      &-title
+        font-size: 22px
+        margin-bottom: 20px
+        font-weight: 400
+      &-text
+        font-weight: 400
+        font-size: 14px
+    &__bottom
+      padding: 30px 20px
+
+      &::before
+
+        top: 10px
+        right: 10px
+        width: 42px
+        height: 42px
+        background-size: contain
+      &-title
+        @include font (22px, normal)
+        max-width: 260px

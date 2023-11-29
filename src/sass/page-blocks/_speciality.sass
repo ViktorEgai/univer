@@ -21,6 +21,11 @@
   &-dropdown__body
     margin-top: 20px
     display: none
+  &-dropdown__notice
+    padding: 20px 0
+    text-align: center
+    font-size: 24px
+    font-weight: 700
   &-item
     background: #F8F8F8
     border-radius: 20px
@@ -33,6 +38,9 @@
     min-height: 110px
     text-align: center
     transition: .3s
+    &.active
+      background-color: $main-color
+      color: #fff
   &-item__title
     font-size: 18px
     line-height: 130%

@@ -1,0 +1,24 @@
+.hero-slider
+  margin-bottom: 60px
+  .slick-arrow
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 1
+    height: 100%
+    svg
+      border: 1px solid $main-color
+      border-radius: 50%
+
+    &.prev
+      left: 5%
+    &.next
+      right: 5%
+  .hero
+    padding-bottom: 0
+@media screen and ( max-width: 992px )
+  .hero-slider
+    margin-top: 90px
+@media screen and ( max-width: 768px )
+  .hero-slider
+    margin-bottom: 0

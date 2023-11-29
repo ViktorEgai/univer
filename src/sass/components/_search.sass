@@ -1,17 +1,20 @@
+
 .search
-  display: none
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  background-color: rgba(0, 0, 0, 0.8)
-  z-index: 1000
-  font-weight: 400
-  font-size: 14px
-  line-height: 155%
+  &-popup
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.8)
+    z-index: 1000
+    font-weight: 400
+    font-size: 14px
+    line-height: 155%
   &__wrapper
     padding: 30px 0 50px
-  &-close
+  &-close-btn
 
     display: block
     margin-left: auto
@@ -48,6 +51,66 @@
     margin-top: 10px
     color: $main-color
     text-decoration: underline
+
+.search-popup .is-form-style
+  label
+    margin-top: 40px
+    display: flex !important
+    align-items: center
+    justify-content: space-between
+  .is-search-input
+    flex: 0 0 auto
+    width: calc(100% - 200px) !important
+    border: none !important
+    padding: 18px 20px 18px 75px !important
+
+    border-radius: 20px !important
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='24' height='25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.347 15.812C3.42 11.31 4.522 5.316 8.132 2.23c3.529-3.015 8.872-2.96 12.284.09 3.7 3.303 4.188 8.682 1.399 12.536-2.708 3.736-8.33 5.388-13.187 2.085-.496.568-.992 1.137-1.498 1.723.199.18.37.343.587.542C6.01 21.137 4.314 23.05 2.59 25A749.187 749.187 0 0 0 0 22.663c1.706-1.914 3.403-3.81 5.126-5.723.244.2.47.389.732.596.496-.577.983-1.146 1.489-1.724Zm6.823 1.165c4.197.027 7.609-3.304 7.69-7.383.09-4.404-3.493-7.852-7.645-7.879-4.179-.027-7.572 3.34-7.635 7.482-.064 4.287 3.267 7.789 7.59 7.78Z' fill='%23B6B6B6'/%3E%3C/svg%3E") !important
+    background-repeat: no-repeat !important
+    background-position: 18px 50% !important
+  .is-search-submit
+    max-width: 180px
+    width: 100% !important
+    height: auto !important
+    padding: 20px 28px !important
+    border-radius: 10px !important
+    font-weight: 500
+    font-size: 16px !important
+    line-height: 95%
+    border: 1px solid $main-color
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex !important
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    -webkit-transition: .3s
+    -o-transition: .3s
+    transition: .3s
+    cursor: pointer
+
+#is-ajax-search-result-718
+  margin-top: 25px
+  &.is-ajax-search-result
+    padding: 20px 20px 30px
+    border-radius: 20px
+  .is-show-more-results-text
+    font-size: 16px
+
+.search-page-list
+  padding: 60px 0 !important
+  li
+    margin-bottom: 20px
+    font-size: 18px
+    a:hover
+      text-decoration: underline
+      color: $main-color
+@media screen and ( min-width: 992px )
+  .search-popup .is-form-style .is-search-submit:hover
+    box-shadow: 0 0 10px 2px $main-color !important
 @media screen and ( max-width: 768px )
   .search
     &-form

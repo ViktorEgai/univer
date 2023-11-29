@@ -10,7 +10,9 @@
     // display: grid
     // grid-template-columns: repeat(4,1fr)
     // gap: 40px
+
   &-item__inner
+    height: 100%
     display: flex
     flex-direction: column
     font-size: 20px
@@ -23,8 +25,26 @@
     color: $main-color
   &-item__title
     margin-top: 44px
+  &-item__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .steps-item__title
+      margin: 0
+  &-item__text
+    margin-top: 20px
+    font-size: 16px
+    color: #000
+    font-weight: 400
+    line-height: 146%
 @media screen and ( max-width: 1200px )
   .steps
     &-item__inner
       font-size: 18px
       padding: 34px 23px 30px
+@media screen and ( max-width: 992px )
+  .landing .steps-item
+    &__inner
+      padding: 20px
+    &__text
+      font-size: 14px

@@ -29,7 +29,7 @@
 
 				<div class="d-none d-lg-flex align-items-center">
 					<ul class="header-top-menu">
-						<li class="header-top-menu__item"><a href="#">Правовые документы</a></li>
+						<li class="header-top-menu__item"><a href="#" class="active">Правовые документы</a></li>
 						<li class="header-top-menu__item"><a href="#">Отзывы</a></li>
 						<li class="header-top-menu__item"><a href="#">Частые вопросы</a></li>
 					</ul>
@@ -90,7 +90,7 @@
 			</div>
 			<div class="d-none d-lg-block">
 				<ul class="header-menu">
-					<li class="header-menu__item"><a href="#">Направления обучения</a></li>
+					<li class="header-menu__item"><a href="#" class="active">Направления обучения</a></li>
 					<li class="header-menu__item"><a href="#">Об университете</a></li>
 					<li class="header-menu__item"><a href="#">НМО</a></li>
 					<li class="header-menu__item"><a href="#">Акредитация</a></li>
@@ -105,7 +105,7 @@
 <div class="header-mobile-menu">
 	<div class="container">
 		<ul class="header-menu">
-			<li class="header-menu__item"><a href="#">Направления обучения</a></li>
+			<li class="header-menu__item"><a href="#" class="active">Направления обучения</a></li>
 			<li class="header-menu__item"><a href="#">Об университете</a></li>
 			<li class="header-menu__item"><a href="#">НМО</a></li>
 			<li class="header-menu__item"><a href="#">Акредитация</a></li>
@@ -129,7 +129,38 @@
 </div>
 
 	<main class="main">
-	<section class="hero">
+		<div class="hero-slider">
+			<div class="hero-slider__item">
+				<section class="hero">
+	<div class="container">
+		<div class="hero__wrapper row">
+			<div class="order-md-1 order-2 col-md-6" data-aos="fade-right">
+				<div class="hero__info --svg__hero-bg">
+					<h1 class="hero__title">
+						Добро пожаловать в УППО. 
+					</h1>
+					
+					<div class="hero__text">Гибкое онлайн-обучение. <br> <br> Создано экспертами, предназначено для профессионалов</div>
+					 
+					<div class="hero__buttons">
+						
+						<a href="#" class="hero__btn btn btn--transparent">Выбрать направление</a>
+						
+						<button class="hero__btn btn" data-src="#popup" data-fancybox>Оставить заявку</button>
+					</div>
+					
+				</div>
+			</div>
+			<div class="order-md-2 order-1 col-md-6 mb-3 mb-md-0" data-aos="fade-left">
+				<div class="hero__image"><img src="./img/doc-3.png" alt="" /></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+			</div>
+			<div class="hero-slider__item">
+				<section class="hero">
 	<div class="container">
 		<div class="hero__wrapper row">
 			<div class="order-md-1 order-2 col-md-6" data-aos="fade-right">
@@ -163,6 +194,11 @@
 	</div>
 </section>
 
+			</div>
+		</div>
+	
+
+	
 	<section class="advantages">
 		<div class="container">
 			<h2 class="advantages__title section-title">Является одним из ведущих учебных заведений России в области обучения специалистов с медицинским образованием</h2>
@@ -173,7 +209,7 @@
 							<div class="advantages-item__icon">
 								<img src="./img/icons/Bank.svg" alt="">
 							</div>
-							<div class="advantages-item__title">НПО под ключ,<br> более 500 программ</div>
+							<div class="advantages-item__title">НМО под ключ,<br> более 500 программ</div>
 						</div>
 					</div>
 				</div>
@@ -246,44 +282,77 @@
 
 	<section class="reviews">
 		<div class="container">
-			<h2 class="reviews__title section-title">
-				Отзывы о нашем <br> университете
-			</h2>
-			<div class="reviews-slider" data-aos="fade-down" >
+			<div class="row mb-5">
+				<div class="col-md-6">
+					<h2 class="reviews__title section-title">
+						Отзывы о нашем <br> университете
+					</h2>
+					<div class="reviews__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пор проектах ipsum что города безорфографичный повстречался знаках это подзаголовок!</div>
+				</div>
+				<div class="col-md-6">
+					<div class="reviews-thumbs">
+						<img src="./img/reviews-dots.svg" alt="">
+						<img src="./img/user-1.png" alt="">
+						<img src="./img/user-1.png" alt="">
+						<img src="./img/user-1.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="reviews-slider" data-aos="fade-down">
 				<div class="reviews-slider__item">
 					<div class="reviews-slider__info">
 						<div class="reviews-slider__photo"><img src="./img/user-1.png" alt=""></div>
-						<div class="reviews-slider__name">Имя Фамилия</div>
+						<div>
+							<div class="reviews-slider__name">Имя Фамилия</div>
+							<a href="#" class="reviews-slider__link">Имя-Ссылка на курс</a>
+						</div>
 					</div>
 					<div class="reviews-slider__text">Университет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподгуУниверситет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподготовку</div>
+					<div class="reviews-slider__date">20.04.2023г.</div>
 				</div>
 				<div class="reviews-slider__item">
 					<div class="reviews-slider__info">
 						<div class="reviews-slider__photo"><img src="./img/user-1.png" alt=""></div>
-						<div class="reviews-slider__name">Имя Фамилия</div>
+						<div>
+							<div class="reviews-slider__name">Имя Фамилия</div>
+							<a href="#" class="reviews-slider__link">Имя-Ссылка на курс</a>
+						</div>
 					</div>
 					<div class="reviews-slider__text">Университет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподгуУниверситет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподготовку</div>
+					<div class="reviews-slider__date">20.04.2023г.</div>
 				</div>
 				<div class="reviews-slider__item">
 					<div class="reviews-slider__info">
 						<div class="reviews-slider__photo"><img src="./img/user-1.png" alt=""></div>
-						<div class="reviews-slider__name">Имя Фамилия</div>
+						<div>
+							<div class="reviews-slider__name">Имя Фамилия</div>
+							<a href="#" class="reviews-slider__link">Имя-Ссылка на курс</a>
+						</div>
 					</div>
 					<div class="reviews-slider__text">Университет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподгуУниверситет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподготовку</div>
+					<div class="reviews-slider__date">20.04.2023г.</div>
 				</div>
 				<div class="reviews-slider__item">
 					<div class="reviews-slider__info">
 						<div class="reviews-slider__photo"><img src="./img/user-1.png" alt=""></div>
-						<div class="reviews-slider__name">Имя Фамилия</div>
+						<div>
+							<div class="reviews-slider__name">Имя Фамилия</div>
+							<a href="#" class="reviews-slider__link">Имя-Ссылка на курс</a>
+						</div>
 					</div>
 					<div class="reviews-slider__text">Университет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподгуУниверситет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподготовку</div>
+					<div class="reviews-slider__date">20.04.2023г.</div>
 				</div>
 				<div class="reviews-slider__item">
 					<div class="reviews-slider__info">
 						<div class="reviews-slider__photo"><img src="./img/user-1.png" alt=""></div>
-						<div class="reviews-slider__name">Имя Фамилия</div>
+						<div>
+							<div class="reviews-slider__name">Имя Фамилия</div>
+							<a href="#" class="reviews-slider__link">Имя-Ссылка на курс</a>
+						</div>
 					</div>
 					<div class="reviews-slider__text">Университет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподгуУниверситет постдипломного профессионального образования предлагает пройти повышение квалификации и профессиональную переподготовку</div>
+					<div class="reviews-slider__date">20.04.2023г.</div>
 				</div>
 			</div>
 			<button class="btn  reviews__btn">Оставить свой отзыв</button>
@@ -445,14 +514,24 @@
 	<footer class="footer">
 	<div class="container">
 		<div class="footer__wrapper row align-items-start">
-			<div class="col-lg-3 mb-3 mb-lg-0"><a href="#" class="footer__logo  logo">
+			<div class="col-lg-3 mb-3 mb-lg-0">
+				<a href="#" class="footer__logo  logo">
 	<img src="./img/logo.png" alt="" />
 	<span
 		>Университет постдипломного <br />
 		профессионального образования</span
 	>
 </a>
-</div>
+
+				<div class="footer-awards">
+					<div class="footer-awards__item">
+						<img src="./img/2021.jpeg" alt="" />
+					</div>
+					<div class="footer-awards__item">
+						<img src="./img/2022.jpeg" alt="" />
+					</div>
+				</div>
+			</div>
 			<div class="col-lg-3 mb-3 mb-lg-0">
 				<div class="footer__col">
 					<p class="footer__text">Наш университете зарегистрирован на портале поставщиков</p>
@@ -508,10 +587,10 @@
 		</div>
 	</div>
 </footer>
-<div id="search" class="search">
+<div id="search" class="search-popup">
 	<div class="search__wrapper">
 		<div class="container">
-			<button class="search-close">
+			<button class="search-close-btn">
 				<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M20.3253 1.75L18.5789 0L10.346 8.25L2.11307 0L0.366699 1.75L8.59961 10L0.366699 18.25L2.11307 20L10.346 11.75L18.5789 20L20.3253 18.25L12.0924 10L20.3253 1.75Z"

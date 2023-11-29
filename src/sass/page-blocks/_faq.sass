@@ -1,0 +1,45 @@
+.faq
+  padding: 60px 0
+  &__title
+    margin-bottom: 28px
+  &-item
+    padding: 20px
+    border-radius: 20px
+    background: #F8F8F8
+  &-item__title
+    font-size: 18px
+    font-weight: 500
+    color: #181818
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &-item__arrow
+    background-color: $main-color
+    border-radius: 50%
+    width: 45px
+    height: 45px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: .3s
+    &.active
+      transform: rotate(315deg)
+  &-item__body
+    display: none
+  &-item__content
+    margin-top: 30px
+    font-size: 16px
+    font-weight: 400
+@media screen and ( max-width: 992px )
+  .faq
+    padding: 30px 0
+    &__title
+      margin-bottom: 20px
+    &-item
+      padding: 20px 15px
+    &-item__title
+      font-size: 16px
+    &-item__arrow
+      width: 35px
+      height: 35px

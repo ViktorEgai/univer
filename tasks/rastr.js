@@ -35,5 +35,6 @@ module.exports = function rastr() {
 				imagemin.svgo()
 			], ), )
 		.pipe(dest('build/img'))
+		.pipe(dest('theme/img/'))
 		.pipe(bs.stream())
 }
